@@ -45,4 +45,23 @@
 - [공식페이지](https://github.com/zeit/next.js/)
 - [배우기](https://nextjs.org/learn)
 
+# _document.js
+- 웹 사이트 전체를 감싸는 템플릿 역할 수행
+-  `Head`, `Main`, `NextScript` 커포넌트를 반드시 포함해야 함
+
+## <HEAD>
+- `_document`를 생성할때 가장 유용하게 사용되는 기본 컴포넌트
+- `_document`안에서 선언시에는 `next/document`패키지 사용 
+>`import {Head} from 'next/docuemnt`
+- 다른페이지에서 사용시에는 `next/head` 패키지 사용
+> `import Head from 'next/head'`
+- `_document`에서 선언되면, 각 페이지에서 부분 재정의 가능 
+- `SEO`를 위한 title, meta 태그
+- `open graph` 태그
+- 특정 페이지에서만 필요한 스크립트 혹은 스타일 시트 
+
+# 라이프 사이클
+- 처음 생성되어 메모리에 올라가고, 화면에 표시되고, 표시가 제거된 후, 메모리에서 사라지는 일련의 과정
+
+
 
