@@ -5,7 +5,7 @@ class Index extends Component {
     render() {
         return (
             <div>
-                <h1>Bootstrap Demo</h1>
+                <h1>Bootstrap Demoss</h1>
 
                 <Link href='/images'>
                     <a className="btn btn-primary">Profile Images</a>
