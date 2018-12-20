@@ -3,6 +3,7 @@ const next = require('next');
 
 const port = process.env.PORT || 3000;
 const dev = process.env.NODE_ENV !== 'production';
+console.log(process.env)
 const app = next({ dev });
 const routes = require('./routes');
 const handle = routes.getRequestHandler(app);
